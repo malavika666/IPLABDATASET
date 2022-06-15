@@ -8,3 +8,10 @@ cv2.destroyAllWindows()<br>
 
 
 
+from PIL import Image
+img=Image.open('plant1.jpg')
+img=img.rotate(180)
+img.show()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+![image](https://user-images.githubusercontent.com/97940144/173803822-ef786ccc-38b4-4acb-9ba8-0ae3dd29cc49.png)
