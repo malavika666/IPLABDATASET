@@ -25,6 +25,7 @@ img=Image.new("RGB",(300,400),(0,255,0))<br>
 img.show()<br>
 ![image](https://user-images.githubusercontent.com/97940144/173804674-18ebd303-7da7-40c2-9c58-83e01b8d4601.png)
 <br>
+*************************************************************************************************************************
 8.Program
 import cv2<br>
 #read the image file<br>
@@ -45,6 +46,7 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940144/174046522-df55cdf1-06bd-43a2-9e82-82928198648d.png)<br>
 ![image](https://user-images.githubusercontent.com/97940144/174046710-e9080fa2-6d89-4bee-ac82-3d1b805c9957.png)<br>
 <br>
+**************************************************************************************************************************
 9.Program<br>
 import cv2<br>
 img=cv2.imread('butterfly1.jpg')<br>
@@ -58,7 +60,7 @@ print('Resized image length width',imgresize.shape)<br>
 cv2.waitKey()<br>
 ![image](https://user-images.githubusercontent.com/97940144/174047072-ab06cc37-4656-4e2a-8689-3eef0af3d04c.png)<br>
 ![image](https://user-images.githubusercontent.com/97940144/174047191-69fe5670-62ab-493a-916e-811a1170d4dd.png)
-
+***************************************************************************************************************************
 
 
 
