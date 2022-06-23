@@ -78,6 +78,18 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
 ![image](https://user-images.githubusercontent.com/97940144/175269476-d560cedd-8ed2-406f-943f-d52fc0a357c6.png)
+***************************************************************************************************************************
+import cv2 as c<br>
+import numpy as np<br>
+from PIL import Image<br>
+array=np.zeros([100,200,3],dtype=np.uint8)<br>
+array[:,:100]=[255,130,0]<br>
+array[:,100:]=[0,0,255]<br>
+img=Image.fromarray(array)<br>
+img.save('image1.png')<br>
+img.show()<br>
+c.waitKey(0)<br>
+![image](https://user-images.githubusercontent.com/97940144/175272380-a88f143e-3462-4992-a536-99f285ac8837.png)
 
 
 
