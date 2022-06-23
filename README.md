@@ -63,7 +63,7 @@ cv2.waitKey()<br>
 ***************************************************************************************************************************
 #Program
 import cv2<br>
-img=cv2.imread("D:\\flower1.jpg")<br><br>
+img=cv2.imread("D:\\flower1.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
 hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
 lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br>
