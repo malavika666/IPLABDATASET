@@ -61,8 +61,23 @@ cv2.waitKey()<br>
 ![image](https://user-images.githubusercontent.com/97940144/174047072-ab06cc37-4656-4e2a-8689-3eef0af3d04c.png)<br>
 ![image](https://user-images.githubusercontent.com/97940144/174047191-69fe5670-62ab-493a-916e-811a1170d4dd.png)
 ***************************************************************************************************************************
+#Program
+import cv2<br>
+img=cv2.imread("D:\\flower1.jpg")<br><br>
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br>
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)<br>
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)<br>
+cv2.imshow("GRAY IMAGE",gray)<br>
+cv2.imshow("HSV IMAGE",hsv)<br>
+cv2.imshow("LAB IMAGE",lab)<br>
+cv2.imshow("HLS IMAGE",hls)<br>
+cv2.imshow("YUV IMAGE",yuv)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
 
-
+![image](https://user-images.githubusercontent.com/97940144/175269476-d560cedd-8ed2-406f-943f-d52fc0a357c6.png)
 
 
 
