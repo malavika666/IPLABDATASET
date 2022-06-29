@@ -114,6 +114,29 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940144/176418936-b6689908-3d44-4cd2-9a41-770fdfc147a4.png)<br>
 ![image](https://user-images.githubusercontent.com/97940144/176419040-58300710-81bb-4e83-94cd-d5bb84a7a779.png)<br>
 ![image](https://user-images.githubusercontent.com/97940144/176419115-33a6b2fc-d231-4cb6-ac23-45f437561632.png)<br>
-
+************************************************************************************************************************
+17.Program<br>
+from PIL import Image<br>
+from PIL import ImageEnhance<br>
+image=Image.open('img1.jpg')<br>
+image.show()<br>
+enh_bri=ImageEnhance.Brightness(image)<br>
+brightness=1.5<br>
+image_brightened=enh_bri.enhance(brightness)<br>
+image_brightened.show()<br>
+enh_col=ImageEnhance.Color(image)<br>
+color=1.5<br>
+image_colored=enh_col.enhance(color)<br>
+image_colored.show()<br>
+enh_con=ImageEnhance.Contrast(image)<br>
+contrast=1.5<br>
+image_contrasted=enh_con.enhance(contrast)<br>
+image_contrasted.show()<br>
+enh_sha=ImageEnhance.Sharpness(image)<br>
+sharpness=3.0<br>
+image_sharped=enh_sha.enhance(sharpness)<br>
+image_sharped.show()<br>
+![image](https://user-images.githubusercontent.com/97940144/176423857-1dfda6bb-05de-46f7-9ba0-455440b1cf8c.png)<br>
+***************************************************************************************************************************
 
 
