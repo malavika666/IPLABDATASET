@@ -91,7 +91,7 @@ img.show()<br>
 c.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940144/175272380-a88f143e-3462-4992-a536-99f285ac8837.png)
 *******************************************************************************************************************
-15.Program<br>
+16.Program<br>
 import cv2<br>
 import numpy as np<br>
 image=cv2.imread('bird2.jpg')<br>
