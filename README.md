@@ -90,6 +90,30 @@ img.save('image1.png')<br>
 img.show()<br>
 c.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940144/175272380-a88f143e-3462-4992-a536-99f285ac8837.png)
+*******************************************************************************************************************
+15.Program<br>
+import cv2<br>
+import numpy as np<br>
+image=cv2.imread('bird2.jpg')<br>
+cv2.imshow('Original Image',image)<br>
+cv2.waitKey(0)<br>
+#Gaussian Blur<br>
+Gaussian=cv2.GaussianBlur(image,(7,7),0)<br>
+cv2.imshow('Gaussian Blurring',Gaussian)<br>
+cv2.waitKey(0)<br>
+#Median Blur<br>
+median=cv2.medianBlur(image,5)<br>
+cv2.imshow('Median Blurring',median)<br>
+cv2.waitKey(0)<br>
+#Bilateral Blur<br>
+bilateral=cv2.bilateralFilter(image,9,75,75)<br>
+cv2.imshow('Bilateral Blurring',bilateral)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+![image](https://user-images.githubusercontent.com/97940144/176418818-e67b229d-4eb5-4005-b1b3-e18ff3ffc9c9.png)<br>
+![image](https://user-images.githubusercontent.com/97940144/176418936-b6689908-3d44-4cd2-9a41-770fdfc147a4.png)<br>
+![image](https://user-images.githubusercontent.com/97940144/176419040-58300710-81bb-4e83-94cd-d5bb84a7a779.png)<br>
+![image](https://user-images.githubusercontent.com/97940144/176419115-33a6b2fc-d231-4cb6-ac23-45f437561632.png)<br>
 
 
 
