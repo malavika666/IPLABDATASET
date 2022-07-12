@@ -118,7 +118,7 @@ cv2.destroyAllWindows()<br>
 17.Program<br>
 from PIL import Image<br>
 from PIL import ImageEnhance<br>
-image=Image.open('img1.jpg')<br>
+image=Image.open('tree.jpg')<br>
 image.show()<br>
 enh_bri=ImageEnhance.Brightness(image)<br>
 brightness=1.5<br>
@@ -136,7 +136,8 @@ enh_sha=ImageEnhance.Sharpness(image)<br>
 sharpness=3.0<br>
 image_sharped=enh_sha.enhance(sharpness)<br>
 image_sharped.show()<br>
-![image](https://user-images.githubusercontent.com/97940144/176423857-1dfda6bb-05de-46f7-9ba0-455440b1cf8c.png)<br>
+![image](https://user-images.githubusercontent.com/97940144/178465640-f2184b31-0fc7-47f2-9047-aad274830c0a.png)
+<br>
 ***************************************************************************************************************************
 
 
