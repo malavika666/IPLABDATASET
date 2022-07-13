@@ -142,6 +142,6 @@ image_sharped.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97940144/178697199-115fca0c-8add-43a1-962b-aee2374ddca5.png)<br>
 ![image](https://user-images.githubusercontent.com/97940144/178697465-99ea67b8-98ed-41fc-b917-e3a21ad9a47a.png)<br>
-![image](https://user-images.githubusercontent.com/97940144/178697586-71c15d2f-b004-48db-a1d4-569fd74d72c1.png)<br>
+![image](https://user-images.githubusercontent.com/97940144/178700427-37ae0fcf-76b7-47d9-be42-2cb09c523344.png)<br>
 ***************************************************************************************************************************
 
