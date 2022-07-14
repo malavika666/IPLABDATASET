@@ -58,6 +58,9 @@ imgresize=cv2.resize(img,(160,170))<br>
 cv2.imshow('Resized image',imgresize)<br>
 print('Resized image length width',imgresize.shape)<br>
 cv2.waitKey()<br>
+OUTPUT:
+Original image length width(163,310,3)<br>
+Resized image length width(170,160,3)<br>
 ![image](https://user-images.githubusercontent.com/97940144/174047072-ab06cc37-4656-4e2a-8689-3eef0af3d04c.png)<br>
 ![image](https://user-images.githubusercontent.com/97940144/174047191-69fe5670-62ab-493a-916e-811a1170d4dd.png)
 ***************************************************************************************************************************
