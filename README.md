@@ -8,7 +8,14 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940144/173802513-b7e6b142-6d25-43d2-9823-15c4bdca95a9.png)<br>
 <br>
 *********************************************************************************************************************
+2.Program to display image using matplotlib<br>
 
+import matplotlib.image as mping<br>
+import matplotlib.pyplot as plt<br>
+img=mping.imread('flower3.jpg')<br>
+plt.imshow(img)<br>
+https://github.com/malavika666/IPLABDATASET/blob/main/program2.ipynb
+*********************************************************************************************************************
 3.Program to perform linear transformation<br>
 from PIL import Image<br>
 img=Image.open('plant1.jpg')<br>
@@ -18,6 +25,17 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940144/173803822-ef786ccc-38b4-4acb-9ba8-0ae3dd29cc49.png)<br>
 <br>
+***********************************************************************************************************************
+4.Program to convert color string to RGB color values
+
+from PIL import ImageColor<br>
+img1=ImageColor.getrgb("yellow")<br>
+print(img1)<br>
+img2=ImageColor.getrgb("red")<br>
+print(img2)<br>
+OUTPUT:<br>
+(255, 255, 0)<br>
+(255, 0, 0)<br>
 ***********************************************************************************************************************
 5.Program to create image using colors<br>
 from PIL import Image<br>
