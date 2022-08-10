@@ -44,6 +44,38 @@ img.show()<br>
 ![image](https://user-images.githubusercontent.com/97940144/173804674-18ebd303-7da7-40c2-9c58-83e01b8d4601.png)
 <br>
 *************************************************************************************************************************
+6)Program to visualize images using various color spaces<br>
+import cv2<br>
+import matplotlib.pyplot as plt<br>
+import numpy as np
+img=cv2.imread('butterfly.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)<br>
+plt.imshow(img)<br>
+plt.show()<br>
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
+plt.imshow(img)<br>
+plt.show()<br>
+![image](https://user-images.githubusercontent.com/97940144/183869922-707211a0-1ee3-4372-981e-663f0183c007.png)
+***************************************************************************************************************************
+7)Program to display image attributes
+from PIL import Image<br>
+image=Image.open('butterfly2.jpg')<br>
+print("Filename :  ",image.filename)<br>
+print("Format :  ",image.format)<br>
+print("Mode :  ",image.mode)<br>
+print("Size :  ",image.size)<br>
+print("Width :  ",image.width)<br>
+print("Height :  ",image.height)<br>
+image.close()<br>
+Filename :   butterfly2.jpg<br>
+Format :   JPEG<br>
+Mode :   RGB<br>
+Size :   (265, 190)<br>
+Width :   265<br>
+Height :   190<br>
+****************************************************************************************************************************
 8.Program to convert the original image to gray scale and then to binary<br>
 import cv2<br>
 #read the image file<br>
@@ -80,7 +112,16 @@ OUTPUT:<br>
 Original image length width(163,310,3)<br>
 Resized image length width(170,160,3)<br>
 ![image](https://user-images.githubusercontent.com/97940144/174047072-ab06cc37-4656-4e2a-8689-3eef0af3d04c.png)<br>
-![image](https://user-images.githubusercontent.com/97940144/174047191-69fe5670-62ab-493a-916e-811a1170d4dd.png)
+![image](https://user-images.githubusercontent.com/97940144/174047191-69fe5670-62ab-493a-916e-811a1170d4dd.png)<br>
+***************************************************************************************************************************
+10.Develop a program to readimage using URL.<br>
+from skimage import io<br>
+import matplotlib.pyplot as plt<br>
+url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ6q3EoyVLZ7KzKr-b_vpOQbKT8kEbxTE2AA&usqp=CAU.jpg'<br>
+image=io.imread(url)<br>
+plt.imshow(image)<br>
+plt.show()<br>
+![image](https://user-images.githubusercontent.com/97940144/183871999-600cff60-0d26-4c44-830d-87f183a8b742.png)<br>
 ***************************************************************************************************************************
 #13.Develop the program to change the image to different color spaces<br>
 import cv2<br>
