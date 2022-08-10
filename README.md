@@ -1,5 +1,5 @@
 # IPLABDATASET
-1.program<br>
+1)program:Python Program to display GrayScale image using read() and write() operations<br>
 import cv2<br>
 img=cv2.imread('leaf1.jpg',0)<br>
 cv2.imshow('image',img)<br>
@@ -9,7 +9,7 @@ cv2.destroyAllWindows()<br>
 <br>
 *********************************************************************************************************************
 
-3.Program<br>
+3.Program to perform linear transformation<br>
 from PIL import Image<br>
 img=Image.open('plant1.jpg')<br>
 img=img.rotate(180)<br>
@@ -19,14 +19,14 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940144/173803822-ef786ccc-38b4-4acb-9ba8-0ae3dd29cc49.png)<br>
 <br>
 ***********************************************************************************************************************
-5.Program<br>
+5.Program to create image using colors<br>
 from PIL import Image<br>
 img=Image.new("RGB",(300,400),(0,255,0))<br>
 img.show()<br>
 ![image](https://user-images.githubusercontent.com/97940144/173804674-18ebd303-7da7-40c2-9c58-83e01b8d4601.png)
 <br>
 *************************************************************************************************************************
-8.Program
+8.Program to convert the original image to gray scale and then to binary<br>
 import cv2<br>
 #read the image file<br>
 img=cv2.imread('plant1.jpg')<br>
@@ -47,7 +47,7 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940144/174046710-e9080fa2-6d89-4bee-ac82-3d1b805c9957.png)<br>
 <br>
 **************************************************************************************************************************
-9.Program<br>
+9.Program to resize the original image<br>
 import cv2<br>
 img=cv2.imread('butterfly1.jpg')<br>
 print('original image length width',img.shape)<br>
@@ -64,7 +64,7 @@ Resized image length width(170,160,3)<br>
 ![image](https://user-images.githubusercontent.com/97940144/174047072-ab06cc37-4656-4e2a-8689-3eef0af3d04c.png)<br>
 ![image](https://user-images.githubusercontent.com/97940144/174047191-69fe5670-62ab-493a-916e-811a1170d4dd.png)
 ***************************************************************************************************************************
-#13.Program
+#13.Develop the program to change the image to different color spaces<br>
 import cv2<br>
 img=cv2.imread("D:\\flower1.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
@@ -82,7 +82,7 @@ cv2.destroyAllWindows()<br>
 
 ![image](https://user-images.githubusercontent.com/97940144/175269476-d560cedd-8ed2-406f-943f-d52fc0a357c6.png)
 ***************************************************************************************************************************
-14.Program<br>
+14.Program to create an image using 2D array<br>
 import cv2 as c<br>
 import numpy as np<br>
 from PIL import Image<br>
@@ -95,7 +95,7 @@ img.show()<br>
 c.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940144/175272380-a88f143e-3462-4992-a536-99f285ac8837.png)
 *******************************************************************************************************************
-16.Program<br>
+16.Program to implements various Blur Techniques<br>
 import cv2<br>
 import numpy as np<br>
 image=cv2.imread('bird2.jpg')<br>
@@ -119,7 +119,7 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940144/176419040-58300710-81bb-4e83-94cd-d5bb84a7a779.png)<br>
 ![image](https://user-images.githubusercontent.com/97940144/176419115-33a6b2fc-d231-4cb6-ac23-45f437561632.png)<br>
 ************************************************************************************************************************
-17.Program<br>
+17.Program to perform Image Enhancement<br>
 from PIL import Image<br>
 from PIL import ImageEnhance<br>
 image=Image.open('tree.jpg')<br>
