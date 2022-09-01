@@ -210,29 +210,29 @@ image_sharped.show()<br>
 27.Program
 
 #Canny Edge detection
-import cv2
-import numpy as np 
-import matplotlib.pyplot as plt
-plt.style.use('seaborn')
-loaded_image = cv2.imread("ingsh.png")
-loaded_image = cv2.cvtColor(loaded_image,cv2.COLOR_BGR2RGB)
-gray_image = cv2.cvtColor(loaded_image,cv2.COLOR_BGR2GRAY)
-edged_image = cv2.Canny(gray_image, threshold1=30, threshold2=100)
-plt.figure(figsize=(20,20)) 
-plt.subplot(1,3,1)
-plt.imshow(loaded_image,cmap="gray")
-plt.title("original Image")
-plt.axis("off")
-plt.subplot(1,3,2) 
-plt.imshow(gray_image,cmap="gray")
-plt.axis("off")
-plt.title("Grayscale Image")
-plt.subplot(1,3,3)
-plt.imshow(edged_image,cmap="gray")
-plt.axis("off")
-plt.title("Canny Edge Detected Image")
-plt.show()
+                 import cv2                        
+                 import numpy as np 
+                 import matplotlib.pyplot as plt
+                 plt.style.use('seaborn')
+                 loaded_image = cv2.imread("ingsh.png")
+                 loaded_image = cv2.cvtColor(loaded_image,cv2.COLOR_BGR2RGB)
+                 gray_image = cv2.cvtColor(loaded_image,cv2.COLOR_BGR2GRAY)
+                 edged_image = cv2.Canny(gray_image, threshold1=30, threshold2=100)
+                 plt.figure(figsize=(20,20)) 
+                 plt.subplot(1,3,1)
+                 plt.imshow(loaded_image,cmap="gray")
+                 plt.title("original Image")
+                 plt.axis("off")
+                 plt.subplot(1,3,2) 
+                 plt.imshow(gray_image,cmap="gray")
+                 plt.axis("off")
+                 plt.title("Grayscale Image")
+                 plt.subplot(1,3,3)
+                 plt.imshow(edged_image,cmap="gray")
+                 plt.axis("off")
+                 plt.title("Canny Edge Detected Image")
+                 plt.show()
 
-![image](https://user-images.githubusercontent.com/97940144/187893872-cdc6e147-2403-4471-93b2-cd59cd0848c6.png)
+                 ![image](https://user-images.githubusercontent.com/97940144/187893872-cdc6e147-2403-4471-93b2-cd59cd0848c6.png)
 
 
