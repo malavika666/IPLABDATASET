@@ -234,4 +234,29 @@ image_sharped.show()<br>
               plt.show()           
   ![image](https://user-images.githubusercontent.com/97940144/187893872-cdc6e147-2403-4471-93b2-cd59cd0848c6.png)
 
+              #Laplacian and Sobel Edge detecting methods
+              import cv2
+              import numpy as np
+              from matplotlib import pyplot as plt
+              #Loading image
+              #img0 = cv2.imread('SanFrancisco.jpg',) 
+              img0= cv2.imread('ingsh.png')
+              #converting to gray scale 
+              gray = cv2.cvtColor(img0, cv2.COLOR_BGR2GRAY)
+              # remove noise
+              img= cv2.GaussianBlur (gray, (3,3),0)
+              #convolute with proper kernels
+              laplacian = cv2.Laplacian (img,cv2.CV_64F) 
+              sobelx = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5) #x 
+              sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5) #y
+              plt.subplot(2,2,1), plt.imshow(img, cmap = 'gray')
+              plt.title('Original'), plt.xticks([]), plt.yticks([])
+              plt.subplot(2,2,2), plt.imshow(laplacian, cmap = 'gray')
+              plt.title('Laplacian'), plt.xticks([]), plt.yticks([])
+              plt.subplot(2,2,3), plt.imshow(sobelx,cmap = 'gray')
+              plt.title('Sobel x'), plt.xticks([]), plt.yticks([])
+              plt.subplot(2,2,4), plt.imshow(sobely,cmap = 'gray')
+              plt.title('Sobel Y'), plt.xticks([]), plt.yticks([])
+              plt.show()
+![image](https://user-images.githubusercontent.com/97940144/187896480-cb8b23b3-4bae-413d-93aa-b0bb9849c3d4.png)
 
