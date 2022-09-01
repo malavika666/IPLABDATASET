@@ -232,6 +232,6 @@ image_sharped.show()<br>
               plt.axis("off")
               plt.title("Canny Edge Detected Image")
               plt.show()           
-               ![image](https://user-images.githubusercontent.com/97940144/187893872-cdc6e147-2403-4471-93b2-cd59cd0848c6.png)
+  ![image](https://user-images.githubusercontent.com/97940144/187893872-cdc6e147-2403-4471-93b2-cd59cd0848c6.png)
 
 
