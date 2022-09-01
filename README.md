@@ -260,3 +260,43 @@ image_sharped.show()<br>
               plt.show()
 ![image](https://user-images.githubusercontent.com/97940144/187896480-cb8b23b3-4bae-413d-93aa-b0bb9849c3d4.png)
 
+              #Edge detection using Prewitt operator
+              import cv2
+              import numpy as np
+              from matplotlib import pyplot as plt
+              img = cv2.imread('ingsh.png')
+              gray = cv2.cvtColor (img, cv2.COLOR_BGR2GRAY)
+              img_gaussian = cv2.GaussianBlur (gray, (3,3),0)
+              #prewitt
+              kernelx = np.array([[1,1,1], [0,0,0],[-1,-1,-1]])
+              kernely = np.array([[-1,0,1],[-1,0,1],[-1,0,1]])
+              img_prewittx= cv2.filter2D(img_gaussian, -1, kernelx) 
+              img_prewitty= cv2.filter2D (img_gaussian, -1, kernely)
+              cv2.imshow("Original Image", img)
+              cv2.imshow("Prewitt x", img_prewittx)
+              cv2.imshow("Prewitt y", img_prewitty)
+              cv2.imshow("Prewitt", img_prewittx + img_prewitty)
+              cv2.waitKey()
+              cv2.destroyAllWindows()
+![image](https://user-images.githubusercontent.com/97940144/187897781-2fe73b98-2634-43f2-98da-73dff36344d7.png)
+
+#Roberts Edge Detection- Roberts cross operator
+import cv2
+import numpy as np
+from scipy import ndimage
+from matplotlib import pyplot as plt
+roberts_cross_v = np.array([[1, 0 ],
+                            [0,-1]] )
+roberts_cross_h = np.array([[0, 1], 
+                            [-1, 0]] )
+img = cv2.imread("ingsh.png",0).astype('float64')
+img/=255.0
+vertical = ndimage.convolve( img, roberts_cross_v ) 
+horizontal=ndimage.convolve(img,roberts_cross_h)
+edged_img = np.sqrt( np.square (horizontal) + np.square(vertical)) 
+edged_img*=255
+cv2.imwrite("output.jpg",edged_img)
+cv2.imshow("OutputImage", edged_img)
+cv2.waitKey()
+cv2.destroyAllwindows()
+
